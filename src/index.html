@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./output.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-DarkBlue font-Manrope">
+
+  <article class="relative bg-DarkGrayishBlue w-[342px] rounded-xl px-[30px] pt-10 pb-16 mx-auto my-20 text-center md:w-[540px]">
+
+    <h2 class="text-NeonGreen uppercase mb-6 tracking-[4px] text-xs">Advice #<span id="adviceID"></span></h2>
+
+    <p id="advice" class="text-LightCyan text-[22px] font-extrabold mb-6"></p>
+
+    <picture class="grid place-content-center">
+      <source media="(max-width: 640px)" srcset="../images/pattern-divider-mobile.svg"/>
+      <source media="(min-width: 641px)" srcset="../images/pattern-divider-desktop.svg"/>
+      <img src="../images/pattern-divider-mobile.svg" alt="Divider">
+    </picture>
+
+
+    <div id="diceBtn" class="bg-NeonGreen rounded-full w-[66px] h-[66px] grid place-content-center absolute bottom-[-33px] left-[138px] cursor-pointer hover:drop-shadow-[0_0_16px_hsl(150,100%,66%)] md:left-[237px]">
+      <img src="../images/icon-dice.svg" alt="Dice">
+    </div>
+
+  </article>
+
+  <footer class="text-LightCyan text-center">
+    Challenge by <a class="text-NeonGreen" target="_blank" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="text-NeonGreen" target="_blank" href="#">Angel Coyasos</a>.
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
